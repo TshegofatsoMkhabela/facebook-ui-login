@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up for Facebook</title>
+    <link
+      rel="shortcut icon"
+      href="./public/facebook-icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <img src="./src/assets/logo.svg" alt="facebook-logo" width="300" />
+      </div>
+      <form class="form-signup">
+        <div class="form-signup-title">
+          <h1>Create a new Account</h1>
+          <p>It's quick and easy.</p>
+        </div>
+        <hr />
+        <div class="form-content">
+          <div class="block">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Surname"
+              required
+            />
+          </div>
+          <label>
+            Date of birth
+            <i
+              class="fa-solid fa-circle-question"
+              title="Click for more information"
+            ></i>
+          </label>
+          <div class="block">
+            <select name="days" id="days"></select>
+            <select name="months" id="months"></select>
+            <select name="years" id="years"></select>
+          </div>
+          <label>
+            Date of birth
+            <i
+              class="fa-solid fa-circle-question"
+              title="Click for more information"
+            ></i>
+          </label>
+          <div class="block">
+            <div class="btn-gender">
+              Female
+              <input type="radio" name="female" id="female" />
+            </div>
+            <div class="btn-gender">
+              Male
+              <input type="radio" name="male" id="male" />
+            </div>
+            <div class="btn-gender">
+              Custom
+              <input type="radio" name="custom" id="custom" />
+            </div>
+          </div>
+          <div class="block">
+            <input
+              type="text"
+              placeholder="Mobile number or email address"
+              id="email"
+              required
+            />
+          </div>
+          <div class="block">
+            <input
+              type="password"
+              placeholder="New password"
+              id="password"
+              required
+            />
+          </div>
+          <div class="terms-and-conditions">
+            <p>
+              People who use our service may have uploaded your contact
+              information to Facebook. <a href="#">Learn more</a>.
+            </p>
+            <p>
+              By clicking Sign Up, you agree to our <a href="#">Terms</a>,
+              <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>.
+              You may receive SMS notifications from us and can opt out at any
+              time.
+            </p>
+          </div>
+          <div class="block">
+            <button class="btn-signup">Sign Up</button>
+          </div>
+          <a href="#" class="link-existing-account">Already have an account?</a>
+        </div>
+      </form>
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

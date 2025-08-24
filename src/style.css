@@ -1,0 +1,167 @@
+:root {
+  --color-primary: #0866ff;
+  --color-text-title: #1c1e21;
+  --color-text-primary: #606770;
+  --color-text-label: #606770;
+  --color-btn-signup: #00a400;
+  --color-bg-primary: #f0f2f5;
+  --color-bg-secondary: #ffffff;
+  --color-divider: #e8eaed;
+
+  --font-primary: Helvetica, Arial, sans-serif;
+}
+/* UTILITIES */
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TODO: remove 200vh height */
+html {
+  background: var(--color-bg-primary);
+  height: 200vh;
+  font-family: var(--font-primary);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.form-signup {
+  justify-self: center;
+  justify-content: center;
+  background: var(--color-bg-secondary);
+  height: 600px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: var(--color-text-primary);
+}
+
+.form-signup-title {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 76px;
+  padding: 10px 16px;
+}
+/* TODO: Make sure margin and padding are set */
+.form-signup-title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-signup-title p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: var(--color-text-primary);
+  font-size: 15px;
+}
+
+.form-signup hr {
+  height: 1px;
+  background-color: var(--color-divider);
+  border: none;
+}
+
+.form-content {
+  padding: 16px;
+}
+.form-content i {
+  cursor: pointer;
+}
+
+#firstName,
+#surname {
+  display: inline-block;
+  height: 40px;
+  width: 48%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid var(--color-divider);
+}
+
+label {
+  display: block;
+  color: var(--color-text-label);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 2px;
+}
+
+#days,
+#months,
+#years {
+  width: 31.5%;
+  height: 36px;
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid var(--color-divider);
+}
+
+.btn-gender {
+  width: 31.5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  text-align: start;
+  border-radius: 4px;
+  border: 1px solid var(--color-divider);
+  padding-left: 10px;
+}
+.btn-gender input {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+#email,
+#password {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid var(--color-divider);
+}
+
+.terms-and-conditions {
+  font-size: 11px;
+}
+.terms-and-conditions p {
+  color: var(--color-text-primary);
+  margin: 11px 0px;
+}
+.terms-and-conditions a {
+  text-decoration: none;
+}
+
+.btn-signup {
+  background: var(--color-btn-signup);
+  color: #ffffff;
+  font-weight: bold;
+  height: 36px;
+  width: 194px;
+  border: none;
+  border-radius: 6px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.link-existing-account {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 17px;
+}
